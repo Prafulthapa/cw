@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us </h1>
+    
+        <div class="row">
+            <iframe
+                width="600"
+                height="450"
+                style="border: 0"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRbdt_WjFsbKqcBE_D01j8ZWRWUJM9oto&q=Softwarica+College">
+    
+            </iframe>
+    
+            <form action="process_contact.php" method="POST">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="name" placeholder="name" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="tel" name="phone" placeholder="number">
+                </div>
+                <input type="submit" value="contact now" class="btn">
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
